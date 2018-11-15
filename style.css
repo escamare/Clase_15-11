@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald')
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+}
+    
+@media screen all and (orientation:portrait) {
+    body{
+        background: red;
+    }
+}
+
+@keyframes nombre {
+    from {background:red;}
+    to {background:pink;}
+}
+
+@keyframes nombre2{
+   from {color:purple; transform:scale(0.7);}
+   to {color:pink; transform: scale(1.5);}
+  
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    animation: nombre .2s infinite;
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    animation: nombre2 2s infinite alternate;
+}
